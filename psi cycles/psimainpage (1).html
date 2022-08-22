@@ -1,0 +1,990 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Design</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS only -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ 
+  <link rel="icon" type="image/x-icon" href="fevicon.jpg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.js">
+
+  <style type="text/css">
+  	.header
+{
+ width : 70%;
+ background-image:linear-gradient(rgb(237, 52, 19),lightgreen),url(1596270991421_login.jpg);
+}
+
+body{
+  /* <!-- font-family: "montserrat",sans-serif; ----!> */
+  font-family:"Times New Roman",Times,serif; 
+}
+
+
+.services{
+  background-color: #f8e9e9;
+  text-align: center;
+}
+
+
+.services h1{
+  display: inline-block;
+  text-transform: uppercase;
+  border-bottom: 4px solid #3498db;
+  font-size: 20px;
+  padding-bottom: 10px;
+  margin-top: 40px;
+  font-family:"Times New Roman",Times,serif; 
+}
+
+
+.cen{
+
+
+  max-width: 1200px;
+  margin:auto;
+  overflow: hidden;
+  padding: 20px;
+}
+
+
+.service{
+  display: inline-block;
+  width: calc(100%/3);
+  margin: 0 -2px;
+  padding: 20px;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.service:hover{
+  background: #ddd;
+
+}
+
+
+.service i{
+  color: #3498db;
+  font-size: 34px;
+  margin-bottom: 30px; 
+}
+
+.service h2{
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin:0;
+  font-family:"Times New Roman",Times,serif; 
+}
+
+
+.service p{
+color: gray;
+font-size: 15px;
+font-weight: 500;
+font-family:"Times New Roman",Times,serif; 
+}
+
+
+@media screen and (max-width: 800px){
+
+  .service{
+    width: 50%;
+  }
+}
+
+
+
+@media screen and (max-width: 500px){
+
+  .service{
+    width: 100%;
+  }
+}
+
+
+.heading
+{
+ font-family:"Times New Roman",Times,serif; 
+ font-size : 30px;
+ text-align : center;
+ font-weight : bold;
+ color : black;
+ top:2%;
+}
+.subheading
+{
+ font-family:"Times New Roman",Times,serif; 
+ font-size : 25px;
+ font-weight : bold;
+ color : #ff1744;
+ padding : 15px;
+}
+.bodysec
+{
+ width : 85%;
+ border-radius : 5%;
+ height : 96%;
+ background : white;
+ margin : auto;
+ margin-bottom : 5%;
+}
+.grad
+{
+ background-color: lightgreen;         
+ background-image:linear-gradient(to right,lightblue,lightgreen);
+}
+
+.btn{
+ background-color: lightgreen;         
+ color:white;         
+ padding: 10px;
+ font-size: 15px;
+ font-weight : bold;
+ border: none;
+}
+
+.btn btn-warning{
+          float:center
+}
+
+.webheading{
+          color:white;
+          font-size: 30px;
+}
+
+
+.homebg{
+  background-image:url("facebook.jpg");
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+  background-size: cover;
+}
+
+.home{
+  width:100%;
+  height:100%;
+}
+
+.joinbtn{
+  float:center;
+  padding:2%;
+  margin:45%;
+  position:center;
+}
+
+.sendbtn{
+  position: relative;
+  background-color:black;
+  border-radius: 5%;
+  margin-left:45%;
+  color:white;
+  font:bold;
+  padding:2%;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+}
+
+/* Make the image responsive */
+.container img {
+  width: 100%;
+  height: auto;
+}
+
+/* Style the button and place it in the middle of the container/image */
+.container .btn {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color:black;
+  color: white;
+  font:bold;
+  padding:2%;
+  border: none;
+  cursor: pointer;
+  border-radius: 5%;
+}
+
+.container .btn:hover {
+  background-color: black;
+}
+
+.bg{
+  position: relative;
+  width:100%;
+}
+
+.bg img{
+  width:100%;
+  height:550px;
+}
+
+
+.bg .container2{
+  position: absolute;
+  top: 5%;
+  left:5%;
+  height:auto;
+  border: none;
+  border-radius: 5px;
+  width:90%;
+}
+
+.container2 .heading{
+  position:aboslute;
+ font-family:"Times New Roman",Times,serif; 
+ font-size : 30px;
+ text-align : center;
+ font-weight : bold;
+ color : black;
+}
+
+
+
+
+/* CSS added by me*/
+
+/*FOOTER*/
+
+footer {
+  background: #16222A;
+  background: -webkit-linear-gradient(59deg, #3A6073, #16222A);
+  background: linear-gradient(59deg, #3A6073, #16222A);
+  color: white;
+  margin-top:100px;
+}
+
+footer a {
+  color: #fff;
+  font-size: 14px;
+  transition-duration: 0.2s;
+}
+
+footer a:hover {
+  color: #FA944B;
+  text-decoration: none;
+}
+
+.copy {
+  font-size: 12px;
+  padding: 10px;
+  border-top: 1px solid #FFFFFF;
+}
+
+.footer-middle {
+  padding-top: 2em;
+  color: white;
+}
+
+
+
+       
+/* For Mobile */
+@media screen and (max-width: 540px) {
+  .login-main-text{
+            padding-top: 5%;
+  }
+  .login-main-text h2{
+      font-size: 20px;
+  }
+  @-webkit-keyframes fadein {
+  from {top: 0; opacity: 0;} 
+  to {top: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {top: 0; opacity: 0;}
+  to {top: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {top: 30px; opacity: 1;} 
+  to {top: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {top: 30px; opacity: 1;}
+  to {top: 0; opacity: 0;}
+}
+ 
+}
+
+
+ html{
+    scroll-behavior: smooth;
+  }
+
+ 
+
+.my-nav{
+  <!-- background : rgba(0,0,0,0.8); -->
+  background-color:white;
+}
+
+ .landing{
+    height: 600px;
+    width: 1300px;
+    margin-top: 150px; 
+    
+    /* margin : 100px; */
+    /* margin-left: 200px;
+    margin-right: 200px; */
+    background-image: url(1596270991421_login.jpg);
+    background-repeat: no-repeat;
+ 
+  background-size: cover;
+  background-position:center;
+ 
+  }
+
+.mainheading{
+
+  color: white;
+
+  top:25%;
+
+
+}
+
+
+.team-area{
+  padding-top: 5%;
+
+}
+.single-team{
+  background-color:white;
+  margin-bottom: 10px;
+
+}
+
+.single-team:hover .social{
+  cursor:pointer;
+  opacity: 1;
+  transform: rotateY(0deg) scale(1,1);
+}
+
+.img-area{
+  overflow: hidden;
+  position: relative;
+}
+
+
+.img-area img{
+  width: 100%;
+
+}
+
+.img-area:hover img{
+  transform: scale(1.2);
+}
+
+.img-area img{
+  transition: all 0.4s ease 0s;
+
+}
+
+@media (max-width: 768px){
+  .img-area img{
+    display:inline-block;
+  }
+  .bg-light{
+  background-color: white !important;
+}
+}
+
+
+.img-area .social{
+  background-color: rgba(0,0,0,0.7);
+  position: absolute;
+  text-align:center;
+  height: 100%;
+  width: 100%;
+  left:0;
+  top:0;
+  opacity: 0;
+  transition:.5s;
+  transform: rotateY(180deg) scale(0.5,0.5);
+
+}
+
+.img-area .social ul{
+  text-align: center;
+  position: relative;
+  
+}
+
+.img-area .social ul li a{
+  border:1px solid #fff;
+  color: #fff;
+  display: block;
+  font-size:20px;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.img-area .social ul li a:hover{
+  background-color: #fff;
+  color: #000;
+  border:1px solid transparent;
+
+}
+
+
+.img-text{
+  padding: 25px;
+  color: black;
+  text-align: center;
+}
+
+
+.img-text h4{
+  margin:0 0 5px;
+  font-size:30px;
+  font-family: bignoodletitling;
+  letter-spacing: 5px;
+}
+
+.img-text h5{
+
+  font-size:17px;
+  font-transform: uppercase;
+font-weight: bold;
+}
+
+.page{
+height: 100vh;
+}
+
+/* Navbar Styling */
+
+.bg-light{
+  background-color: transparent !important;
+}
+
+.navbar-brand {
+  color: rgb(23, 22, 23) !important;
+  font-size: 35px;
+  font-weight: bold;
+  font-family:"Times New Roman",Times,serif; 
+}
+
+ul.navbar-nav li a.nav-link{
+  color: rgb(18, 17, 18) !important;
+  font-weight: bold;
+  font-family:"Times New Roman",Times,serif; 
+}
+
+ul.navbar-nav li a.nav-link:hover{
+  color: #2d94fc  !important;
+  font-weight: bold;
+}
+
+
+ul.navbar-nav li.active a.nav-link{
+  color: #2d94fc !important;
+  transition: all.3s;
+}
+
+.shrink{
+  background-color: #fff !important;
+}
+
+.shrink .navbar-brand{
+  color: #2d94fc !important;
+}
+
+.shrink ul.navbar-nav li a.nav-link{
+  color: #222222 !important;
+
+}
+
+.shrink ul.navbar-nav li a.nav-link:hover,.shrink ul.navbar-nav li.active a.nav-link{
+
+  color: #2d94fc !important;
+}
+
+.fontstyle{
+  font-family:"Times New Roman",Times,serif;
+  font-size:20px;
+}
+
+@media (max-width: 768px){
+  .bg-light{
+  background-color: white !important;
+}
+
+.navbar-brand {
+  color: black !important;
+  font-weight: bold;
+  font-family:"Times New Roman",Times,serif; 
+}
+
+ul.navbar-nav li a.nav-link{
+  color: black !important;
+  font-weight: bold;
+  font-family:"Times New Roman",Times,serif; 
+}
+}
+
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <a class="navbar-brand" href="#">PSI CYCLES</a>
+  <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button> -->
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#home">HOME <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#about">ABOUT US</a>
+      </li>
+
+
+       <li class="nav-item">
+        <a class="nav-link" href="#services">OUR SERVICES</a>
+      </li>
+
+
+       <li class="nav-item">
+        <a class="nav-link" href="#team">OUR TEAM</a>
+      </li>
+
+       <li class="nav-item">
+        <a class="nav-link" href="#contact">CONTACT US</a>
+      </li>
+      
+      
+    </ul>
+
+  </div>
+</nav>
+
+<!-- <div class="header">
+ <span class="webheading">PSI Cycles</span>
+  <span style="float:right">
+  <button class="btn" ><a href="#home">HOME</a></button>
+  <button class="btn"><a href="#about">ABOUT</a></button>
+  <button class="btn">TEAM</button>
+   <button class="btn">LOGIN</button>
+  <button class="btn">SIGN UP</button></span>
+</div> -->
+
+   <!--  <div class="heading" id="home">HOME</div>
+    <div class="subheading">Welcome to out website</div> -->
+	<!-- <br><br><br> -->
+	
+    <div class="landing" id="home" >
+     
+      <div class="col-12 col-lg-6 ml-auto mr-auto mainheading" style="text-align: center;">
+      <h1 class="mainheading" style="font-size: 40px;font-family:'Times New Roman',Times,serif ">I don’t have a bucket list but my bikeit list is a mile long.</h1>
+      </div>
+    </div>
+  
+  <div id="about">
+ <br><br><br>
+    <h2 align="center" style="font-size: 40px;font-family:'Times New Roman',Times,serif">ABOUT</h2><br>
+    
+    <div class="jumbotron" id="about" style="text-align: center;">
+
+      <div class="row jumbotron">
+
+        <div class="col-8">
+      <P class="fontstyle">Bicycle-sharing systems have spurt up all over the globe especially since smartphones became commonplace. In India, several such services are operating in various communities and Ari is proud to join the ranks. Ari inherits some aspects from one of the most successful models, NammaCycle, working in IISC Bangalore. 4th Gen cycle-sharing is a micro-mobility system that involves the dynamic distributed use of cycles that can be picked and dropped off at any location within a designated area.</P></div>
+
+<div class="col-4">
+  
+  <img src="image--.jpg" class="img-responsive img-fluid">
+
+</div>
+
+    </div>
+
+      <br>
+      <br>
+
+      <div class="row">
+        <div class="col-4">
+          <img src="cycles2.jpg" class="img-responsive img-fluid">
+        </div>
+<div class="col-8">
+       <P class="fontstyle">Bicycle-sharing systems have spurt up all over the globe especially since smartphones became commonplace. In India, several such services are operating in various communities and Ari is proud to join the ranks. Ari inherits some aspects from one of the most successful models, NammaCycle, working in IISC Bangalore. 4th Gen cycle-sharing is a micro-mobility system that involves the dynamic distributed use of cycles that can be picked and dropped off at any location within a designated area.</P>
+
+       </div>
+
+
+
+</div>
+    </div>
+	</div>
+  <div id="services">
+  <br><br><br>
+    <h2 align="center" style="font-size: 40px;font-family:'Times New Roman',Times,serif">OUR SERVICES</h2><br>
+
+    <div class="services" >
+<div class="cen">
+  
+
+  <div class="service">
+    <i class="fa fa-anchor"></i>
+    <h2>Service name</h2>
+    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    </p>
+     </div>
+
+     <div class="service">
+    <i class="fa fa-rupee"></i>
+    <h2>Service name</h2>
+    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    </p>
+     </div>
+
+
+     <div class="service">
+    <i class="fa fa-rupee"></i>
+    <h2>Service name</h2>
+    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    </p>
+     </div>
+
+     <div class="service">
+    <i class="fa fa-dollar"></i>
+    <h2>Service name</h2>
+    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    </p>
+     </div>
+
+     <div class="service">
+    <i class="fa fa-anchor"></i>
+    <h2>Service name</h2>
+    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    </p>
+     </div>
+     <div class="service">
+    <i class="fa fa-anchor"></i>
+    <h2>Service name</h2>
+    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    </p>
+     </div>
+     </div>
+  </div>
+</div>
+
+<div id="team">
+ <br><br><br>
+    <h2 align="center" style="font-size: 40px;font-family:'Times New Roman',Times,serif">OUR TEAM</h2><br>
+    <div class="team-area">
+      <div class="container">
+        
+        <div class="row">
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            
+<div class="single-team">
+  <div class="img-area">
+
+    <img src="facebook.jpg" class="img-responsive">
+    <div class="social">
+      <ul class="list-inline">
+        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+
+      </ul>
+      
+    </div>
+
+
+  </div>
+  
+
+  <div class="img-text">
+
+    <h4>John Doe</h4>
+    <h5>Frontend Developer</h5>
+  </div>
+
+
+</div>
+
+
+
+          </div>
+         
+
+
+
+
+        <div class="col-md-4 col-sm-6 col-xs-12">
+            
+<div class="single-team">
+  <div class="img-area">
+
+    <img src="facebook.jpg" class="img-responsive" style="max-height: 757px;">
+    <div class="social">
+      <ul class="list-inline">
+        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+
+      </ul>
+      
+    </div>
+
+
+  </div>
+  
+
+  <div class="img-text">
+
+    <h4>David smith</h4>
+    <h5>Frontend Developer</h5>
+  </div>
+
+
+</div>
+
+
+
+          </div>
+
+
+<div class="col-md-4 col-sm-6 col-xs-12">
+            
+<div class="single-team">
+  <div class="img-area">
+
+    <img src="facebook.jpg" class="img-responsive" style="max-height: 757px;">
+    <div class="social">
+      <ul class="list-inline">
+        <li><a href="#"><i class="fa fa-facebook" style="color: white"></i></a></li>
+        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+
+      </ul>
+      
+    </div>
+
+
+  </div>
+  
+
+  <div class="img-text">
+
+    <h4>Peter</h4>
+    <h5>Backend Developer</h5>
+  </div>
+
+
+</div>
+
+
+
+          </div>
+
+
+
+      </div>
+
+
+    </div>
+
+
+</div>
+</div>
+   <div id="contact">
+ <br><br><br>
+ <h2 style="text-align:center;font-size: 40px;font-family:'Times New Roman',Times,serif">CONTACT US</h2>
+        <hr>
+  <div class="jumbotron" style="background-color: white">
+ 
+ 
+
+  <div class="row" align="left">
+    
+    <div class="col-12 col-lg-6 ml-auto mr-auto "  >
+
+
+<form>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">First Name</label>
+      <input type="text" class="form-control" id="fname" placeholder="FirstName">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputPassword4">Second Name</label>
+      <input type="text" class="form-control" id="sname" placeholder="Second Name">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputAddress">Email</label>
+    <input type="eamil" class="form-control" id="gmail" placeholder="@gmail.com">
+  </div>
+  <div class="form-group">
+    <label for="inputAddress2" >Phone Number</label>
+    <input type="text" class="form-control" id="phonenumber">
+  </div>
+
+
+
+
+<div class="form-row">
+<div class="form-group col-md-12">
+      <label for="inputState">Choose one</label>
+      <select id="inputState" class="form-control">
+        <option selected>Choose One</option>
+        <option><option value = "company" selected>Company</option>
+            <option value = "worker">Worker</option></option>
+      </select>
+    </div>
+</div>
+<div class="form-group">
+    <label for="w3review">Why do you Want to Join</label>
+
+    <textarea class="form-control" id="w3review" name="w3review" rows="4" cols="50">
+</textarea>
+
+  </div>
+
+<div class="form-row">
+  <div class="form-group col-md-12">
+  <button type="button" class="btn btn-primary btn-block">Submit</button>
+  </div>
+</div>
+
+
+
+</form>
+
+    </div>
+
+
+  </div>
+  
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="mainfooter" role="contentinfo">
+    <div class="footer-middle">
+    <div class="container">
+      <div class="row">
+            
+       
+      </div>
+     
+
+
+
+
+  <h3>Contact Details:</h3>
+        <div class="container">
+            <div class="row"> 
+
+                <div class="col-4 offset-1 col-sm-2">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-7 col-sm-5">
+                    <h5>Our Address</h5>
+                    <address>
+                  121, Clear Water Bay Road<br>
+                  Clear Water Bay, Kowloon<br>
+                  HONG KONG<br>
+                  Tel.: +852 1234 5678<br>
+                  Fax: +852 8765 4321<br>
+                  Email: <a href="mailto:confusion@food.net">confusion@food.net</a>
+               </address>
+                </div>
+                <div class="col-12 col-sm-4 align-self-center">
+                    <div class="text-center">
+                        <a href="http://google.com/+"><span class="fa fa-google"></span></a>
+                        <a href="http://www.facebook.com/profile.php?id="><span class="fa fa-facebook"></span></a>
+                        <a href="http://www.linkedin.com/in/"><span class="fa fa-linkedin"></span></a>
+                        <a href="http://twitter.com/"><span class="fa fa-twitter"></span></a>
+                        <a href="http://youtube.com/"><span class="fa fa-youtube"></span></a>
+                        <a href="mailto:"><span class="fa fa-letter">Mail</span></a>
+                    </div>
+                </div>
+           </div>
+           <div class="row justify-content-center">             
+                <div class="col-auto">
+                    <p>© Copyright 2018 Ristorante Con Fusion</p>
+                </div>
+           </div>
+        </div>
+    </footer>
+  
+    </div>
+    </div>
+  </footer>
+
+
+
+
+</body>
+
+<script type="text/javascript">
+  
+$(document).ready(function(){
+  $(window).scroll(function(){
+
+    if($(document).scrollTop()>50){
+      $('nav').addClass('shrink')
+    }
+
+    else{
+      $('nav').removeClass('shrink')
+    }
+
+
+
+  });
+});
+</script>
+</html>

@@ -1,0 +1,127 @@
+<doctype>
+<html lang="en">
+<head>
+   
+   <title>Registration Form</title>
+   
+   <style>
+      body{
+	background-image:url("shop.jpg");
+	background-size:cover;
+	background-repeat:no-repeat;
+      }
+      .registerbox{
+	background-color:#EBF4FA;
+	width:500px;
+	height:500px;
+	margin-left:380px;
+	margin-top:40px;
+	padding:30px;
+	text-align:center;
+	border-radius:20px;
+	border:2px solid white;
+      }
+      h1{
+	color:#FF0000;
+	font-weight:bold;
+	font-family:cursive;
+	text-align:center;
+	font-size:70px;
+	margin-top:60px;
+	text-shadow:6px 6px 3px black;
+      }
+      h2{
+	color:#2B65EC;
+	font-weight:bold;
+	font-family:sans-serif;
+	font-size:35px;
+	text-decoration:underline white;
+      }
+      .clire{
+	float:center;
+	position :absolute;
+	border-radius:5px;
+	border:none;
+	width:120px;
+	background:#000000;
+	font-weight:600;
+	color:#FFFFFF;
+	margin-top:10px;
+	padding:10px;
+	position:relative;
+	bottom:5px;
+	right:10px;
+      }
+      .clire:hover{
+	background-color:white;
+	color:black;
+      }
+      .labtxt{
+	color:black;
+	font-size:18px;
+      }
+      .inttxt{
+	border-radius:13px;
+	border:2px solid white;
+	height:33px;
+	width:350px;
+      } 
+      input::placeholder{
+	text-align:center;
+	color:#D1D0CE;
+	font-family:italic;
+      }
+ 
+   </style>
+   
+   <script>
+     function formsubmit()
+     {
+      var a=document.getElementById("name");
+      var b=document.getElementById("email");
+      var c=document.getElementById("number");
+      var d=document.getElementById("address");
+      var e=document.getElementById("password");
+      var f=document.getElementById("conpassword");
+      if(a.value=="" || b.value=="" || c.value=="" || d.value=="" || e.value=="" || f.value=="")
+      {
+	alert("you cant leave any box unfilled");
+	return false;
+      }
+      if(e.value!=f.value)
+      {
+	alert("password and confirm password should be same");
+	return false;
+      }
+      alert("form is submitted");
+      return true;
+      }
+    </script> 
+</head>
+<body>
+<h1>PSI CYCLES</h1>
+<div class="registerbox">
+   <h2>REGISTER HERE</h2>
+   
+   <label class="labtxt" for="name">UserName:</label></br>
+   <input class="inttxt" type="text" id="name" placeholder="Enter your Name here" name=""></br>
+   
+   <label class="labtxt" for="email">Email Address:</label></br>
+   <input class="inttxt" type="email" id="email" placeholder="Enter your Email Address here" name=""></br>
+   
+   <label class="labtxt" for="number">Phone Number:</label></br>
+   <input class="inttxt" type="number" id="number" placeholder="Enter your Phone Number here" name=""></br>
+   
+   <label class="labtxt" for="address">Address:</label></br>
+   <input class="inttxt" type="text" id="address" placeholder="Enter your Address here" name=""></br>
+   
+   <label class="labtxt" for="password">Password:</label></br>
+   <input class="inttxt" type="password" id="password" placeholder="Enter your Password here" name=""></br>
+   
+   <label class="labtxt" for="conpassword">Confirm Password:</label></br>
+   <input class="inttxt" type="password" id="conpassword" placeholder="Enter your Password once again here" name=""></br></br>
+   
+   <button onclick="formsubmit()" class="clire" type="button" >Click to Register</button>
+</div>
+</body>
+</html>
